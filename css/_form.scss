@@ -1,0 +1,112 @@
+/* ----- Formulario ----- */
+
+$area: #eeeefc;
+$fondo: #eeeefc;
+$campo: DarkSlateGray;
+$linea: SlateBlue;
+$sobre: white;
+$alerta: #f4bd8a;
+$ok: MediumAquamarine;
+$error: red;
+$suave: SlateBlue;
+$foco: LightSteelBlue;
+$duda: skyblue;
+
+.form {
+  overflow: auto;
+  background-color: $area;
+  margin-top: 2em;
+  padding: 0.5em 1.5em 0 1.75em;
+  @include sombra();
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    // Sin el Reset usaríamos Flex para igualar la longitud de los campos
+    // display: flex; flex-wrap: wrap;
+    small {
+      margin-top: 1em;
+      color: $suave;
+    }
+    &:last-child {
+      text-align: center;
+    }
+  }
+  .button {
+    font-size: large;
+    margin: 0 0.5em 1em 0.5em;
+    width: 120px;
+    height: 36px;
+    border: none;
+    color: $campo;
+    text-transform: uppercase;
+    &:first-child {
+      background-color: $alerta;
+    }
+    &:last-child {
+      background-color: $ok;
+    }
+    &:hover {
+      cursor: pointer;
+      @include sombra();
+    }
+    &:focus {
+      @include foco();
+    }
+  }
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 1.2em 1.2em 1em;
+  margin-bottom: 0.5em;
+  color: $campo;
+  background-color: $fondo;
+  border: none;
+  border-bottom: 3px solid $linea;
+  font-size: medium;
+  &:hover {
+    background-color: $sobre;
+  }
+  &:focus {
+    background-color: $sobre;
+    @include foco();
+  }
+}
+.textarea {
+  resize: vertical;
+  min-height: 3.5em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#dudas {
+  float: left;
+  margin: 0.25em 0.25em 0.25em 1em;
+  padding: 0 0.5em;
+  font-size: 2em;
+  color: $linea;
+}
+
+// Verificación de formulario
+.verif {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 1em 3em 0 3.25em;
+    li:last-child {
+      text-align: right;
+    }
+    .button {
+      margin: 0 0 1em 1em;
+      width: 150px;
+      height: 48px;
+    }
+  }
+}

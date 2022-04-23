@@ -1,0 +1,74 @@
+/* ----- Tabla ----- */
+
+$pagina: white;
+$flecha: DarkSlateBlue;
+$area: #eeeefc;
+$celda: AliceBlue;
+
+.scroll {
+  // Tabla responsive
+  padding: 0 1em;
+  overflow-x: auto;
+}
+
+.table {
+  margin: 2em auto;
+  border-collapse: collapse;
+  background-color: $pagina;
+  @include sombra();
+  width: 100%;
+}
+
+.table,
+.tr,
+.th,
+.td {
+  padding: 6px 6px;
+  border: 1px solid $flecha;
+  font-size: 0.85rem;
+  line-height: 1.5em;
+}
+
+.th,
+.tfoot td {
+  color: $flecha;
+  background-color: $area;
+}
+
+.th {
+  width: 50%;
+}
+
+.celda {
+  width: 15%;
+  color: $flecha;
+  background-color: $celda;
+  text-align: center;
+  strong {
+    color: $flecha;
+  }
+}
+
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .table,
+  .tr,
+  .th,
+  .td {
+    padding: 10px 15px;
+    font-size: medium;
+    line-height: 1.2em;
+  }
+  .columnas {
+    flex-wrap: nowrap;
+    div {
+      flex-grow: 1;
+      width: 50%;
+    }
+  }
+}

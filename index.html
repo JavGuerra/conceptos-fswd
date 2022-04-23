@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Conceptos FSWD</title>
+    <meta name="description" content="Práctica final del Ramp-up del Bootcamp de FSWD" />
+    <meta name="keywords" content="Full Stack Web Developer" />
+    <meta name='date' content='Apr. 5, 2022' />
+    <meta name="author" content="Javier Guerra" />
+    <meta name="copyright" content="CC BY-SA 3.0" />
+    <!-- Para Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@javgr" />
+    <!-- Para Facebook y otras RR.SS. -->
+    <meta property="og:url" content="https://javguerra.github.io/ramp-up-fswd/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Conceptos FSWD" />
+    <meta property="og:description" content="Práctica final del Ramp-up del Bootcamp de FSWD" />
+    <meta property="og:image" content="img/banner.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Banner" />
+    <meta property="og:locale" content="es_ES" />
+
+    <link rel="canonical" href="https://javguerra.github.io/ramp-up-fswd/index.html" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="body">
+
+        <header>
+            <noscript>
+                <p>La página web que está viendo usa JavaScript, por lo que, para su correcto funcionamiento,
+                    debe tenerlo activado en el navegador.</p>
+            </noscript>
+
+            <!-- Etiqueta de navegación para accesibilidad web. -->
+            <a href="#contenido" class="sr">Ir al contenido</a>
+
+            <div id="barra-menu">
+                <div class="contenedor">
+                    <a href="https://javguerra.github.io/ramp-up-fswd/index.html" role="button">
+                        <img id="logo" src="img/logo.svg" alt="Lorem Ipsum logo">
+                    </a>
+
+                    <button id="hamburguesa" aria-controls="menu" aria-label="Botón de menú" aria-expanded="false">
+                        <span class="barra1"></span>
+                        <span class="barra2"></span>
+                        <span class="barra3"></span>
+                    </button>
+
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="#descripcion">Descripción</a></li>
+                            <li><a href="#perfiles">Perfiles</a></li>
+                            <li><a href="#tecnologias">Tecnologías</a></li>
+                            <li><a href="#contactar">Contactar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="hero">
+                <div class="oscurecer">
+                    <div class="contenedor">
+                        <h1 class="titulo h1-responsive" lang="en">Full&nbsp;Stack Web&nbsp;Developer</h1>
+                        <p class="p-responsive">Conceptos</p>
+                        <i id="seguir" class="bi bi-chevron-compact-down"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="contenido">
+
+            <!-- Descripción -->
+
+            <section class="section" id="descripcion" accesskey="d">
+                <div class="contenedor">
+                    <h2 class="titulo h2">Descripción</h2>
+                    <h3 class="titulo h3">
+                        ¿Qué es un desarrollador web <span class="span" lang="en">full&nbsp;stack</span>?
+                    </h3>
+                    <p>
+                        Un desarrollador web es un programador especializado, o dedicado de forma específica, a
+                        desarrollar aplicaciones de la World Wide Web o aplicaciones distribuidas en red que se ejecutan
+                        desde un servidor web hacia un navegador web.
+                    </p>
+                    <figure id="full-stack">
+                        <img src="img/full-stack.svg"
+                            alt="Imagen esquemática que muestra la capa del navegador, la de internet y la del servidor.">
+                        <figcaption class="figure-caption">
+                            <small class="small">Fig.&nbsp;1. Capas&nbsp;de aplicación.</small>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Las aplicaciones web suelen tener varias capas. <strong class="strong"
+                            lang="en">Front&nbsp;end</strong> y <strong class="strong" lang="en">back&nbsp;end</strong>
+                        son términos que se refieren a la separación de intereses entre una capa de presentación y una
+                        capa de acceso a datos respectivamente. Los programadores que desarrollan el <span
+                            lang="en">front&nbsp;end</span> para el navegador se denominan <strong class="strong"
+                            lang="en">front&nbsp;end developers</strong>, y son <strong class="strong"
+                            lang="en">back&nbsp;end developers</strong> aquellos que desarrollan la capa del <span
+                            lang="en">back&nbsp;end</span> en el servidor.
+                    </p>
+                    <p>
+                        Los desarroladores web que trabajan tanto en la capa del <span lang="en">front&nbsp;</span> como
+                        en la del <span lang="en">back&nbsp;</span> son denominados <strong class="strong"
+                            lang="en">full&nbsp;stack web&nbsp;developers</strong>.
+                    </p>
+                    <p>
+                        <a lang="en" href="https://www.w3schools.com/whatis/whatis_fullstack.asp" target="_blank">
+                            <i class="bi bi-link-45deg"></i>&nbsp;&nbsp;Saber más...</a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Perfiles -->
+
+            <section class="section" id="perfiles" accesskey="p">
+                <div class="contenedor">
+                    <h2 class="titulo h2">Perfiles</h2>
+                    <h3 class="titulo h3">Empleos en desarrollo web</h3>
+                    <p>
+                        El desarrollo web es llevado a cabo por una serie de perfiles profesionales complementarios que
+                        se reparten el trabajo según su área de especialización. La siguiente tabla muestra aquellos
+                        perfiles comunes relacionados con el desarrollo web <span lang="en">front&nbsp;end</span> y
+                        <span lang="en">back&nbsp;end</span>.
+                    </p>
+                    <div class="scroll">
+                        <table class="table">
+                            <thead>
+                                <tr class="tr">
+                                    <th class="th" colspan="4" scope="colgroup">
+                                        <i class="bi bi-braces-asterisk"></i>&nbsp;&nbsp;<span
+                                            lang="en">Full&nbsp;stack</span>
+                                    </th>
+                                </tr>
+                                <tr class="tr">
+                                    <th class="th" colspan="2" scope="colgroup">
+                                        <i class="bi bi-window-fullscreen"></i>&nbsp;&nbsp;<span
+                                            lang="en">Front&nbsp;end</span>
+                                    </th>
+                                    <th class="th" colspan="2" scope="colgroup">
+                                        <i class="bi bi-code-square"></i>&nbsp;&nbsp; <span
+                                            lang="en">Back&nbsp;end</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tr">
+                                    <th rowspan="3" scope="rowgroup" class="celda th">
+                                        <strong class="strong">Desarrollo</strong>
+                                    </th>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Se encarga de aplicar el código de programación de la interfaz gráfica de la aplicación.">
+                                            Programador <span lang="en">front&nbsp;end</span>
+                                        </dfn>
+                                    </td>
+                                    <th rowspan="3" scope="rowgroup" class="celda th">
+                                        <strong class="strong">Desarrollo</strong>
+                                    </th>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Se encarga de aplicar el código de programación en el servidor de aplicaciones web.">
+                                            Programador <span lang="en">back&nbsp;end</span>
+                                        </dfn>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="El maquetador es el encargado de convertir a HTML5, CSS3 y Javascript los mockups proporcionados por el diseñador gráfico.">
+                                            Maquetador
+                                        </dfn>
+                                    </td>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="El ingeniero de datos es el profesional encargado de sentar las bases para la adquisición, el almacenamiento, la transformación y la gestión de los datos en un proyecto.">
+                                            Ingeniero de datos
+                                        </dfn>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Los diseñadores UX/UI se encargan de que el usuario de una web o aplicación tenga una buena interacción con el producto o servicio mejorando su usabilidad y accesibilidad.">
+                                            Diseñador UX/UI
+                                        </dfn>
+                                    </td>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Los probadores de software (también conocidos como testers) planifican y llevan a cabo pruebas de software de los ordenadores para comprobar si funcionan correctamente.">
+                                            Probadores de software
+                                        </dfn>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <th rowspan="2" scope="rowgroup" class="celda th">
+                                        <strong class="strong">Diseño</strong>
+                                    </th>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Es el encargado de diseñar la imagen general del proyecto (logotipo, web, email templates) utilizando los wireframes que generan los UX Designers, imágenes, tipografías y una paleta de colores que se ajusten al Look & Feel del cliente.">
+                                            Diseñador gráfico
+                                        </dfn>
+                                    </td>
+                                    <th rowspan="3" scope="rowgroup" class="celda th">
+                                        <strong class="strong">Sistemas</strong>
+                                    </th>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Es la persona que tiene la responsabilidad de implementar, configurar, mantener, monitorizar, documentar y asegurar el correcto funcionamiento de un sistema informático, o algún aspecto de este.">
+                                            Administrador
+                                        </dfn>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Se encarga de escribir el texto de una página web, los artículos de un blog o las entradas de las redes sociales.">
+                                            Redactor de contenidos
+                                        </dfn>
+                                    </td>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="DevOps es una metodología de desarrollo de software, no un perfil profesional, pero es común denominar así a los ingenieros de sistemas con capacidades para aplicar esta metodología que se centra en la comunicación, colaboración e integración entre los desarrolladores de software y los profesionales de sistemas.">
+                                            <span lang="en">DevOps</span>
+                                        </dfn>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <th rowspan="2" scope="rowgroup" class="celda th">
+                                        <strong class="strong" lang="en">Marketing</strong>
+                                    </th>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Se encarga de desarrollar o corregir el HTML para aplicar estrategias o técnicas que mejoren el posicionamiento de la web en los buscadores como Google, Yahoo o Bing.">
+                                            Desarollador SEO
+                                        </dfn>
+                                    </td>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Es responsable de mantener el buen funcionamiento del software y hardware de redes. Estas redes de datos pueden ser redes de área local (LAN), redes de área amplia (WAN), intranets y/o extranets.">
+                                            Administrador de redes
+                                        </dfn>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Es el encargado de crear, planear, ejecutar y dirigir el plan de marketing de la empresa, trabajando para identificar un mercado objetivo, crear una imagen de marca, crear y mantener una campaña de marketing para Internet, haciendo uso de tecnologías digitales.">
+                                            Experto en mercados digitales
+                                        </dfn>
+                                    </td>
+                                    <th scope="row" class="celda th">
+                                        <strong class="strong">Otros</strong>
+                                    </th>
+                                    <td class="td">
+                                        <dfn class="dfn"
+                                            title="Lleva a cabo la prospección, búsqueda y negociación con proveedores analizando precios, realizando controles de calidad de las adquisiciones, la gestión del stock y la gestión documental relacionada.">
+                                            Gestor de compras...
+                                        </dfn>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="tfoot">
+                                <tr class="tr">
+                                    <td class="td" colspan="4">
+                                        <i class="bi bi-info-circle"></i>&nbsp;&nbsp;<small class="small">Pasa con el
+                                            puntero del ratón por encima de los distintos perfiles para obtener una
+                                            breve descripción.</small>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <h3 class="titulo h3">Flujos de trabajo</h3>
+                    <div class="columnas">
+                        <div>
+                            <p>
+                                En el <span lang="en">front&nbsp;end</span>, los grupos de perfiles profesionales de
+                                desarrollo se ocupan de la programación de la interfaz de la aplicación, la usabilidad
+                                y el maquetado del diseño. Los diseñadores elaboran las propuestas gráficas y de
+                                contenido, y los encargados de <span lang="en">marketing</span> trabajan en la manera
+                                en que la aplicación web va a ser difundida en la red.
+                            </p>
+                            <p>
+                                El <dfn class="dfn" lang="en"
+                                    title="Elabora proyectos digitales. Se ocupa de optimizar un proyecto determinado, de la forma más eficaz y eficiente, con los recursos humanos y materiales de que dispone en la entidad.">
+                                    web project manager</dfn> es el director de orquesta que unifica criterios.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                En el <span lang="en">back&nbsp;end</span>, los desarrolladores programan la lógica del
+                                servidor, dan estructura a los datos y prueban las funcionalidades, y los encargados de
+                                sistemas se ocupan de que la infraestrctura (servidores, redes y herramientas de
+                                desarrollo) estén operativas.
+                            </p>
+                            <p>
+                                Otros perfiles, como los gestores de compras, se encargan de aprovisionar el flujo de
+                                trabajo con los recursos tecnológicos que se requieren.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tecnologías -->
+
+            <section class="section" id="tecnologias" accesskey="t">
+                <div class="contenedor">
+                    <h2 class="titulo h2">Tecnologías</h2>
+                    <h3 class="titulo h3">Las herramientas del desarrollador&nbsp;web</h3>
+                    <p>
+                        Los utensilios del desarrollador web son las tecnologías con las que llevará a cabo su trabajo
+                        profesional. Estas herramientas cubren distintas áreas de utilidad: lenguajes de programación,
+                        marcos de desarrollo (<span lang="en">frameworks</span>), sistemas de gestión de bases de datos
+                        (SGBD), servidores de aplicaciones... A continuación se muestra un listado de las más conocidas,
+                        pero la lista es mucho más extensa. Pulsa en el enlace de cada ficha para obtener información.
+                    </p>
+                    <ul id="galeria">
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-html5.svg" alt="Logo HTML" />
+                            <h4 class="titulo h4">HTML5</h4>
+                            <p>
+                                <span class="etiqueta lenguaje">Lenguaje</span>
+                                <span class="etiqueta front" lang="en">Front</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-css3.svg" alt="Logo CSS" />
+                            <h4 class="titulo h4">CSS3</h4>
+                            <p>
+                                <span class="etiqueta lenguaje">Lenguaje</span>
+                                <span class="etiqueta front" lang="en">Front</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-javascript.svg" alt="Logo JavaScript" />
+                            <h4 class="titulo h4">JavaScript</h4>
+                            <p>
+                                <span class="etiqueta lenguaje">Lenguaje</span>
+                                <span class="etiqueta front" lang="en">Front</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-php.svg" alt="Logo PHP" />
+                            <h4 class="titulo h4">PHP</h4>
+                            <p>
+                                <span class="etiqueta lenguaje">Lenguaje</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/PHP" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-python.svg" alt="Logo Python" />
+                            <h4 class="titulo h4">Python</h4>
+                            <p>
+                                <span class="etiqueta lenguaje">Lenguaje</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/Python" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-react.svg" alt="Logo React" />
+                            <h4 class="titulo h4">React</h4>
+                            <p>
+                                <span class="etiqueta framework">Marco</span>
+                                <span class="etiqueta front" lang="en">Front</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/React" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-bootstrap.svg" alt="Logo Bootstrap" />
+                            <h4 class="titulo h4">Bootstrap</h4>
+                            <p>
+                                <span class="etiqueta framework">Marco</span>
+                                <span class="etiqueta front" lang="en">Front</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/Bootstrap_(framework)" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-laravel.svg" alt="Logo Laravel" />
+                            <h4 class="titulo h4">Laravel</h4>
+                            <p>
+                                <span class="etiqueta framework">Marco</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/Laravel" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-mariadb.svg" alt="Logo MariaDB" />
+                            <h4 class="titulo h4">MariaDB</h4>
+                            <p>
+                                <span class="etiqueta sgbd">SGBD</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/MariaDB" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-mongodb.svg" alt="Logo MongoDB" />
+                            <h4 class="titulo h4">MongoDB</h4>
+                            <p>
+                                <span class="etiqueta sgbd">SGBD</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/MongoDB" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-nodejs.svg" alt="Logo NodeJS" />
+                            <h4 class="titulo h4">NodeJS</h4>
+                            <p>
+                                <span class="etiqueta servidor">Servidor</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/Node.js" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                        <li class="ficha">
+                            <img class="marca" src="img/logo-git.svg" alt="Logo Git" />
+                            <h4 class="titulo h4">Git</h4>
+                            <p>
+                                <span class="etiqueta servidor">Servidor</span>
+                                <span class="etiqueta back" lang="en">Back</span>
+                            </p>
+                            <p>
+                                <a href="https://es.wikipedia.org/wiki/Git" target="_blank">
+                                    <i class="bi bi-link-45deg">&nbsp;</i>&nbsp;Más...</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Formulario -->
+
+            <section class="section" id="contactar" accesskey="f">
+                <div class="contenedor">
+                    <h2 class="titulo h2">Contactar</h2>
+                    <form class="form" action="back-end.html" method="get">
+                        <h3 class="titulo h3">¿Dudas?</h3>
+                        <div class="espaciador">
+                            <i id="dudas" class="bi bi-question-circle-fill"></i>
+                            <p>
+                                Si necesitas obtener más información sobre <strong class="strong"
+                                    lang="en">Full&nbsp;Stack Web&nbsp;Developer</strong>, contacta con nosotros
+                                haciéndonos llegar tus consultas a través de este formulario.
+                            </p>
+                        </div>
+                        <p class="sr">Es necesario rellenar todos los campos del formulario.</p>
+                        <ul>
+                            <li>
+                                <label for="nombre" class="sr">Nombre:</label>
+                                <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre"
+                                    required="required" />
+                            </li>
+                            <li>
+                                <label for="correo" class="sr">Correo electrónico:</label>
+                                <input class="input" type="email" id="correo" name="correo" placeholder="Tu correo"
+                                    required="required" />
+                            </li>
+                            <li>
+                                <label for="ciudad" class="sr">Ciudad:</label>
+                                <select class="select" id="ciudad" name="ciudad" required="required">
+                                    <!-- Opción seleccionada a modo de placeholder -->
+                                    <option value="" hidden="hidden" selected="selected">--Tu ciudad--</option>
+                                    <optgroup label="España">
+                                        <option value="Badajoz">Badajoz</option>
+                                        <option value="Madrid">Madrid</option>
+                                    </optgroup>
+                                    <optgroup label="Venezuela">
+                                        <option value="Maracaibo">Maracaibo</option>
+                                        <option value="Caracas">Caracas</option>
+                                    </optgroup>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="mensaje" class="sr">Mensaje:</label>
+                                <textarea class="textarea" id="mensaje" name="mensaje" rows="4"
+                                    required="required">Pon aquí tu mensaje. ✍️</textarea>
+                                <br />
+                                <small class="small">Todos los campos son&nbsp;obligatorios.</small>
+                            </li>
+                            <!-- Con "display:none" en .verif el contenido dentro de "li" no se muestra
+                                en patalla, pero sí es visible para los robots de SPAM -->
+                            <li class="verif">
+                                <!-- Campo oculto. Útil para enviar información automatizada
+                                    y útil para evitar ataques por XSS (Cross-Site Scripting)
+                                    y CRSF (Cross-Site Request Forgery). -->
+                                <input class="input" type="hidden" id="dato" name="dato" value="1234567890" />
+                                <!-- Honeypod. Trampa para evitar los bots de SPAM. -->
+                                <label for="hp">Si puedes leer esto, ¡no llenes el siguiente campo!</label>
+                                <input class="input" type="text" id="hp" name="hp" />
+                            </li>
+                            <li>
+                                <button class="button" type="reset" value="Borrar">Borrar</button>
+                                <button class="button" type="submit" value="Enviar">Enviar</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie -->
+
+        <button id="subir" aria-label="Subir"><i class="bi bi-chevron-up"></i></button>
+
+        <footer class="footer">
+            <div class="contenedor">
+                <div>
+                    <img src="img/qrcode.svg" alt="Código QR de esta página" />
+                </div>
+                <div>
+                    <p>
+                        <a href="https://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank">
+                            (CC)&nbsp;BY-SA&nbsp;3.0</a> Javier&nbsp;Guerra
+                    </p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="bi bi-twitter"></i><span class="sr">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="bi bi-facebook"></i><span class="sr">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="bi bi-instagram"></i><span class="sr">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="bi bi-linkedin"></i><span class="sr">Linked-in</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="bi bi-youtube"></i><span class="sr">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

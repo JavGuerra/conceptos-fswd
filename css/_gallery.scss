@@ -1,0 +1,85 @@
+/* ----- Galería ----- */
+
+$borde: Thistle;
+$foco: DarkSlateBlue;
+$front: PaleGreen;
+$txt-front: darkGreen;
+$back: Green;
+$txt-back: White;
+$servidor: Indigo;
+$txt-servidor: White;
+$lenguaje: PaleTurquoise;
+$txt-lenguaje: DarkBlue;
+$sgbd: Thistle;
+$txt-sgbd: Indigo;
+$framework: MediumBlue;
+$txt-framework: White;
+
+#galeria {
+  margin-top: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+  list-style: none;
+  padding: 0 1em;
+}
+
+.ficha {
+  width: 20%;
+  min-width: 200px;
+  border: 1px solid $borde;
+  padding: 0.5em;
+  text-align: center;
+  &:hover {
+    border-color: $foco;
+  }
+  a {
+    font-size: medium;
+  }
+  p {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+.marca {
+  width: 100%;
+  padding: 0.5em 1em 0;
+}
+
+.etiqueta {
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: small;
+}
+
+.front {
+  background-color: $front;
+  color: $txt-front;
+}
+
+.back {
+  background-color: $back;
+  color: $txt-back;
+}
+
+.lenguaje {
+  background-color: $lenguaje;
+  color: $txt-lenguaje;
+}
+
+.servidor {
+  background-color: $servidor;
+  color: $txt-servidor;
+}
+
+.sgbd {
+  background-color: $sgbd;
+  color: $txt-sgbd;
+}
+
+.framework {
+    background-color: $framework;
+    color: $txt-framework;
+}

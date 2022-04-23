@@ -1,0 +1,102 @@
+/* ----- Menú ----- */
+
+$color: mediumblue;
+$foco: mediumblue;
+$fondo: rgba(230, 230, 250, 0.90);
+
+#barra-menu {
+  padding: 10px 25px;
+  background-color: $fondo;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  @include sombra();
+}
+
+#logo {
+  height: 40px;
+  &:hover {
+    color: $fondo;
+  }
+}
+
+#menu {
+  display: none;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  ul {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0 10px;
+    width: 100%;
+  }
+  li {
+    margin: 10px 0 10px 10px;
+  }
+  a {
+    color: $color;
+    background-color: inherit;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.80em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 10px;
+    &:hover {
+      @include foco();
+    }
+    &:active {
+      color: $foco;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #hamburguesa {
+    display: none;
+  }
+  #menu {
+    display: block;
+    float: right;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+// NavIcon
+
+#hamburguesa {
+  margin-top: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.barra1,
+.barra2,
+.barra3 {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: $color;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.cambio .barra1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+.cambio .barra2 {
+  opacity: 0;
+}
+.cambio .barra3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}

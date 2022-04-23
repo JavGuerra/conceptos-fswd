@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   version="1.1"
+   viewBox="0 0 512 512"
+   id="svg14"
+   sodipodi:docname="logo-html5.svg"
+   inkscape:version="1.1.2 (1:1.1+202202050852+0a00cf5339)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.76953125"
+     inkscape:cx="273.54315"
+     inkscape:cy="287.83756"
+     inkscape:window-width="1920"
+     inkscape:window-height="1053"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <g
+     id="g924"
+     transform="translate(-17.028205,-69.62129)">
+    <path
+       d="M 435.27581,505.58558 272.79013,550.62129 110.74093,505.62526 74.633,100.62129 h 396.79041"
+       fill="#e44d26"
+       id="path2"
+       style="stroke-width:0.039679" />
+    <path
+       d="M 435.23612,133.71361 H 273.0282 v 382.46628 l 131.29795,-36.38568"
+       fill="#f16529"
+       id="path4"
+       style="stroke-width:0.039679" />
+    <path
+       d="M 397.30297,183.39177 H 272.86949 v 49.67815 h 119.98942 m -4.48373,50.86854 H 272.86949 v 180.73803 l 101.8561,-28.25148 m -101.8561,-102.8084 h 61.22476 l -5.75346,64.43877 -55.4713,14.959"
+       fill="#ffffff"
+       id="path6"
+       style="stroke-width:0.039679" />
+    <path
+       d="m 161.84753,333.61661 h 111.141 v -49.67815 h -65.74817 l -4.52342,-50.86854 h 70.27159 V 183.39177 H 148.43602 m 22.57737,253.07292 101.8561,28.2118 0.15871,-0.0397 v -51.66212 l -0.15871,0.0397 -55.39194,-14.91932 -3.53144,-39.63937 h -49.87655"
+       fill="#ebebeb"
+       id="path8"
+       style="stroke-width:0.039679" />
+  </g>
+</svg>

@@ -1,0 +1,210 @@
+// Iconos Bootstrap Icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+// Fuentes
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
+$pagina: white;
+$flecha: DarkSlateBlue;
+$boton: skyblue;
+$foco: skyblue;
+$fondo: lavender;
+$area: #eeeefc;
+$titulo: SlateBlue;
+$color: #555;
+$strong: #333;
+$celda: AliceBlue;
+
+@mixin foco {
+  outline: 2px solid $foco;
+  outline-offset: 1px;
+}
+
+@mixin sombra {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* ----- Reset ----- */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* ----- Cuerpo ----- */
+
+.body {
+  // Sticky footer
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+  color: $color;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.titulo {
+  font-family: "Montserrat", sans-serif;
+}
+
+.h2 {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  width: 250px;
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  color: $titulo;
+  background-color: $area;
+  font-variant: small-caps;
+  @include sombra();
+}
+
+.h3 {
+  margin: 1.5em 1em 0.5em;
+  font-size: 1.2em;
+}
+
+.h3,
+.h4 {
+  color: $flecha;
+}
+
+.strong {
+  color: $strong;
+}
+
+.span {
+  color: $flecha;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.dfn {
+  border-bottom: 2px dotted $flecha;
+  text-decoration: none;
+  font-style: inherit;
+  cursor: help;
+}
+
+.section {
+  margin: 2em 0 0;
+  padding: 1em 0 1em;
+  p {
+    margin: 0.5em 1.2em 1em;
+    text-align: justify;
+  }
+  a {
+    padding: 5px 10px;
+    color: $flecha;
+    background-color: $fondo;
+    text-decoration: none;
+    &:hover {
+      @include sombra();
+    }
+  }
+}
+
+#full-stack {
+  float: right;
+  margin: 0 1em 2em 3em;
+  width: 20%;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+#perfiles {
+  background-color: $fondo;
+  padding: 2.5em 0 2.5em;
+  h2 {
+    background-color: $pagina;
+  }
+}
+
+#contactar {
+  margin-top: 1em;
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 992px;
+}
+
+.espaciador {
+  margin-bottom: 2.5em;
+}
+
+#subir {
+  width: 50px;
+  height: 50px;
+  background-color: $boton;
+  border-radius: 5%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $flecha;
+  font-size: 20px;
+  position: fixed;
+  bottom: 110px;
+  right: 25px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  transform: scale(0);
+  @include sombra();
+}
+
+// Hace que los mensajes sean sólo visibles para lectores de pantalla
+.sr {
+  position: absolute;
+  overflow: hidden;
+  // alternativas: top:-9999px; o left:-9999px; o text-indent:-9999px; ...
+  text-indent: -9999px;
+}
+
+@media (min-width: 768px) {
+  .body {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  .section {
+    margin: 3em 0 0;
+    padding: 2em 0 2em;
+  }
+  #perfiles {
+    padding: 4em 0 4em;
+  }
+  #contactar {
+    margin-top: 1.5em;
+  }
+  #subir {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+// Importaciones de hojas .scss
+@import "menu";
+@import "hero";
+@import "table";
+@import "gallery";
+@import "form";
+@import "foot";
+
+// IMPORTANTE:
+// Los profesores solicitan expresamente
+// que no se usen etiquetas html como selectores

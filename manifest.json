@@ -1,0 +1,18 @@
+{
+  "name": "Conceptos FSWD",
+  "short_name": "FSWD",
+  "description": "Práctica final del Ramp-up del Bootcamp de FSWD",
+  "lang": "es",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "theme_color": "#ffffff",
+  "background_color": "#483D8B",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+        }
+    ]
+}
