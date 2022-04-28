@@ -63,3 +63,9 @@ Por: __Javier Guerra__
 
 Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE)  
 Sobre el contenido de la web: [(CC) BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/es/)
+
+## Saber más
+
+Artículos informativos relacionados con esta página:
+
+- [Una página de ejemplo](https://javguerra.github.io/2022-04-23-pagina-de-ejemplo/) Descripción del proyecto.
