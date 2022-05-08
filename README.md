@@ -70,3 +70,4 @@ Artículos informativos relacionados con esta página:
 
 - [Una página de ejemplo](https://javguerra.github.io/2022-04-23-pagina-de-ejemplo/): Descripción del proyecto.
 - [Un simple efecto Parallax](https://javguerra.github.io/2022-05-03-parallax-simple/): Efecto incluido en esta página.
+- [Accesibilidad web](https://javguerra.github.io/2022-05-08-accesibilidad/): Buenas prácticas explicadas a través de esta página ejemplo.
